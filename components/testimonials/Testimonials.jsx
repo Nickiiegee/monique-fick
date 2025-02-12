@@ -47,6 +47,7 @@ const Testimonials = () => {
               className={styles.testimonial}
               sx={{
                 justifyContent: "center",
+                textAlign: 'center'
               }}
             >
               <Box className={styles.client_avatar}>

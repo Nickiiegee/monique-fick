@@ -38,6 +38,7 @@ const About = () => {
       </Typography>
 
       <Box
+      className={styles.about_container}
         sx={{
           display: "grid",
           gridTemplateColumns: "35% 50%",

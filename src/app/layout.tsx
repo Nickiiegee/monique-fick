@@ -24,6 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <title>Monique Fick CV</title>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>

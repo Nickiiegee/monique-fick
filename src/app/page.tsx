@@ -7,14 +7,10 @@ import { ThemeProvider } from "@mui/material/styles";
 import Image from "next/image";
 import HomePage from "../../components/home";
 import styles from "./page.module.css";
-import Head from "next/head";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <Head>
-        <title>monique-fick</title>
-      </Head>
       <main className={styles.main}>
         <ThemeProvider theme={theme}>
           <Navbar />

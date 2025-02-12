@@ -13,8 +13,8 @@ const OtherExperience = () => {
             <Box className={styles.experience_content}>
               {duties.map(({ title, duty }, index) => {
                 return (
-                  <Paper className={styles.experience_details} elevation={0}>
-                    <Box key={index}>
+                  <Paper className={styles.experience_details} elevation={0} key={index}>
+                    <Box>
                       <Typography variant="h4">
                         <FaRegCheckCircle
                           className={styles.experience_details_icon}

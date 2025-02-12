@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import ME from "@/src/assets/me_about.jpg";
 import styles from "./styles.module.css";
 import { Box, Paper, Typography } from "@mui/material";
@@ -15,7 +15,14 @@ const About = () => {
 
   return (
     <section id="about">
-      <Typography variant="h6" className={styles.about_h5}>
+      <Typography variant="h6" 
+      // className={styles.about_h5}
+      sx={{
+        'marginTop': '8rem',
+        'textAlign': 'center',
+        'color':' rgba(187, 199, 253, 0.89)',
+      }}
+      >
         Get to know me a little more
       </Typography>
       <Typography variant="h2" className={styles.about_h2}>
@@ -37,7 +44,12 @@ const About = () => {
           <Box className={styles.about_cards}>
             {aboutList.map(({ category, detail }, idx) => {
               return (
-                <Paper className={styles.about_card} key={idx}>
+                <Paper className={styles.about_card} key={idx} sx={{ 
+                  background: 'rgba(0, 73, 156, 0.925)',
+                  '&:hover': {
+                    transition: 'all 300ms ease'
+                  }
+                  }}>
                   {category === "Education" ? (
                     <MdSchool className={styles.about_icon} />
                   ) : category === "IT Experience" ? (
@@ -48,7 +60,7 @@ const About = () => {
                     <BiGitBranch className={styles.about_icon} />
                   )}
                   <Typography>{category}</Typography>
-                  <Typography className={styles.about_card_small}>
+                  <Typography className={styles.about_card_small} sx={{ fontSize: '12px'}}>
                     {detail}
                   </Typography>
                 </Paper>

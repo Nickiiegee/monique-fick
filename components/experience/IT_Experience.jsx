@@ -12,9 +12,9 @@ const IT_Experience = () => {
             <Typography variant="h3">{title}</Typography>
             {dutyList.map(({ role, duties }, idx) => {
               return (
-                <Box className={styles.experience_content}>
+                <Box className={styles.experience_content} key={idx}>
                   <Paper className={styles.experience_details} elevation={0}>
-                    <Box key={idx}>
+                    <Box>
                       <Typography variant="h4">
                         <FaRegCheckCircle
                           className={styles.experience_details_icon}

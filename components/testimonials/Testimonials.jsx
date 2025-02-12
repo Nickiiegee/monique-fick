@@ -53,25 +53,25 @@ const Testimonials = () => {
               <Box className={styles.client_avatar}>
                 <Gravatar email={avatar} default="monsterid" size={65} />
               </Box>
-              <Box sx={{ textAlign: "center" }}>
-                <Typography
-                  className={styles.client_review}
-                  sx={{
-                    fontSize: "13px",
-                    textAlign: "center",
-                  }}
-                >
-                  {review}
-                </Typography>
-                <Typography
-                  className={styles.client_name}
-                  sx={{
-                    textAlign: "center",
-                  }}
-                >
-                  {name}
-                </Typography>
-              </Box>
+              <Typography
+                className={styles.client_review}
+                sx={{
+                  fontSize: "13px",
+                  textAlign: "center",
+                  margin: "1rem auto 2rem",
+                }}
+              >
+                {review}
+              </Typography>
+              <Typography
+                className={styles.client_name}
+                sx={{
+                  textAlign: "center",
+                  margin: "1rem auto 2rem",
+                }}
+              >
+                {name}
+              </Typography>
             </SwiperSlide>
           );
         })}

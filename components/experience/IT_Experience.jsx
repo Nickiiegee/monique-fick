@@ -13,7 +13,11 @@ const IT_Experience = () => {
             {dutyList.map(({ role, duties }, idx) => {
               return (
                 <Box className={styles.experience_content} key={idx}>
-                  <Paper className={styles.experience_details} elevation={0} sx={{ backgroundColor: 'transparent' }}>
+                  <Paper
+                    className={styles.experience_details}
+                    elevation={0}
+                    sx={{ backgroundColor: "transparent" }}
+                  >
                     <Box>
                       <Typography variant="h4">
                         <FaRegCheckCircle
@@ -28,6 +32,7 @@ const IT_Experience = () => {
                               <ListItem
                                 className={styles.experience_details_small}
                                 key={idx}
+                                sx={{ listStyleType: "disc" }}
                               >
                                 {duty}
                               </ListItem>

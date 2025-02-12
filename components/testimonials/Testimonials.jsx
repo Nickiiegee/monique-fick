@@ -47,7 +47,7 @@ const Testimonials = () => {
               className={styles.testimonial}
               sx={{
                 justifyContent: "center",
-                textAlign: 'center'
+                textAlign: "center",
               }}
             >
               <Box className={styles.client_avatar}>
@@ -58,11 +58,19 @@ const Testimonials = () => {
                   className={styles.client_review}
                   sx={{
                     fontSize: "13px",
+                    textAlign: "center",
                   }}
                 >
                   {review}
                 </Typography>
-                <Typography className={styles.client_name}>{name}</Typography>
+                <Typography
+                  className={styles.client_name}
+                  sx={{
+                    textAlign: "center",
+                  }}
+                >
+                  {name}
+                </Typography>
               </Box>
             </SwiperSlide>
           );

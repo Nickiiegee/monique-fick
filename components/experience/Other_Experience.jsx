@@ -10,10 +10,14 @@ const OtherExperience = () => {
         return (
           <Box key={id}>
             <Typography variant="h3">{title}</Typography>
-            <Box className={styles.experience_content}>
-              {duties.map(({ title, duty }, index) => {
-                return (
-                  <Paper className={styles.experience_details} elevation={0} key={index}>
+            {duties.map(({ title, duty }, index) => {
+              return (
+                <Box className={styles.experience_content} key={index}>
+                  <Paper
+                    className={styles.experience_details}
+                    elevation={0}
+                    sx={{ backgroundColor: "transparent" }}
+                  >
                     <Box>
                       <Typography variant="h4">
                         <FaRegCheckCircle
@@ -27,6 +31,7 @@ const OtherExperience = () => {
                             <ListItem
                               className={styles.experience_details_small}
                               key={itemIndex}
+                              sx={{ listStyleType: "disc" }}
                             >
                               {item}
                             </ListItem>
@@ -35,9 +40,9 @@ const OtherExperience = () => {
                       </List>
                     </Box>
                   </Paper>
-                );
-              })}
-            </Box>
+                </Box>
+              );
+            })}
           </Box>
         );
       })}

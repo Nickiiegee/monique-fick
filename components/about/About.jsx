@@ -1,7 +1,7 @@
 "use client";
 import ME from "@/src/assets/me_about.jpg";
 import styles from "./styles.module.css";
-import { Box, Paper, Typography } from "@mui/material";
+import { Box, Paper, Typography, useMediaQuery } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import { BiGitBranch } from "react-icons/bi";
@@ -10,6 +10,7 @@ import { MdSchool } from "react-icons/md";
 import { aboutList } from "./AboutList";
 
 const About = () => {
+  const matches = useMediaQuery("(min-width:600px)");
   const paragraph =
     "As a self-taught Full Stack Developer landing my first career in IT at Autumn Leaf IT, I am results-driven with expertise in both front-end and back-end technologies. Proficient in building and optimizing web applications using modern frameworks such as React, TypeScript and Nextjs. Experienced with both MySQL and NoSQL databases as well as implementing RESTful API's and integrating third-party services. Strong problem-solving skills, attention to detail, and a passion for creating seamless, user-centric solutions. Able to work in fast-paced environments and collaborate effectively with cross-functional teams to deliver high-quality software.";
 
@@ -38,11 +39,11 @@ const About = () => {
       </Typography>
 
       <Box
-      className={styles.about_container}
+        className={styles.about_container}
         sx={{
           display: "grid",
-          gridTemplateColumns: "35% 50%",
-          gap: "15%",
+          gridTemplateColumns: { md: "3fr", xs: "1fr" },
+          gap: { md: "15%", xs: "0" },
         }}
       >
         <Box className={styles.about_me}>
@@ -64,7 +65,7 @@ const About = () => {
                   key={idx}
                   sx={{
                     background: "rgba(0, 73, 156, 0.925)",
-                    borderRadius: '1rem',
+                    borderRadius: "1rem",
                     "&:hover": {
                       transition: "all 300ms ease",
                     },
@@ -93,9 +94,11 @@ const About = () => {
           <Typography className={styles.about_content_p}>
             {paragraph}
           </Typography>
-          <Link href="#contact" className={styles.btn}>
-            Let's Talk
-          </Link>
+          <Box className={styles.btn_container}>
+            <Link href="#contact" className={styles.btn}>
+              Let's Talk
+            </Link>
+          </Box>
         </Box>
       </Box>
     </section>

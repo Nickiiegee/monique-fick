@@ -113,12 +113,16 @@
    Devices
    */
    @media screen and (max-width: 1024px) {
+    .btn_container {
+      text-align: center;
+    }
+
     .about_container {
       grid-template-columns: 1fr;
       gap: 0;
     }
     .about_me {
-      width: 1000%;
+      width: 60%;
       margin: 2rem auto 4rem;
     }
   

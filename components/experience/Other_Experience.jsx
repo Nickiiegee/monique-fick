@@ -31,7 +31,7 @@ const OtherExperience = () => {
                             <ListItem
                               className={styles.experience_details_small}
                               key={itemIndex}
-                              sx={{ listStyleType: "disc" }}
+                              sx={{ listStyleType: "disc", display: 'list-item' }}
                             >
                               {item}
                             </ListItem>

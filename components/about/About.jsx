@@ -40,11 +40,6 @@ const About = () => {
 
       <Box
         className={styles.about_container}
-        sx={{
-          display: "grid",
-          gridTemplateColumns: { md: "3fr", xs: "1fr" },
-          gap: { md: "15%", xs: "0" },
-        }}
       >
         <Box className={styles.about_me}>
           <Box className={styles.about_me_image}>

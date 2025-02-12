@@ -52,10 +52,24 @@ const Projects = () => {
               <Box className={styles.project_image}>
                 <Image src={image} alt={title} width={3200} height={200} />
               </Box>
-              <Typography className={styles.project_item_title}>
+              <Typography
+                className={styles.project_item_title}
+                sx={{
+                  margin: "1rem 0 0.5rem",
+                  color: "white",
+                  fontSize: "1.2rem",
+                }}
+              >
                 {title}
               </Typography>
-              <Typography className={styles.project_item_description}>
+              <Typography
+                className={styles.project_item_description}
+                sx={{
+                  fontSize: "0.9rem",
+                  marginBottom: "1.5rem",
+                  lineHeight: "1.6",
+                }}
+              >
                 {description}
               </Typography>
               <Box className={styles.project_item_info}>

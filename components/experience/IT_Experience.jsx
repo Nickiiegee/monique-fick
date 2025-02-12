@@ -32,7 +32,7 @@ const IT_Experience = () => {
                               <ListItem
                                 className={styles.experience_details_small}
                                 key={idx}
-                                sx={{ listStyleType: "disc" }}
+                                sx={{ listStyleType: "disc", display: 'list-item' }}
                               >
                                 {duty}
                               </ListItem>

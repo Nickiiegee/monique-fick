@@ -1,0 +1,97 @@
+.projects_h5 {
+    margin-top: 8rem;
+    text-align: center;
+    color: rgba(187, 199, 253, 0.89);
+  }
+  
+  .projects_h2 {
+    text-align: center;
+    color: rgba(3, 118, 250, 0.925);
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px #000000;
+  }
+  
+  .projects_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust columns for responsiveness */
+    gap: 2.5rem;
+    max-width: 1200px; /* Limit the container width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 1rem; /* Add some padding on small screens */
+  }
+  
+  .project_item {
+    background: rgba(0, 73, 156, 0.925);
+    padding: 1.5rem; /* More padding for spaciousness */
+    border-radius: 1.5rem;
+    border: 1px solid transparent;
+    transition: all 500ms ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .project_item:hover {
+    border-color: rgba(3, 118, 250, 0.925);
+    color: white;
+    background: transparent;
+  }
+  
+  .project_item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  
+  .project_item_title {
+    margin: 1rem 0 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .project_item_description {
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .project_item_info {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+  }
+  
+  .project_item_info_link {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(3, 118, 250, 0.925);
+    margin-top: 1rem;
+    padding: 12px;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .project_image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    height: 180px; /* Set a fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  /* 
+   Devices
+   */
+   @media screen and (max-width: 1024px) {
+  }
+  
+  @media screen and (max-width: 600px) {
+    .projects_h5 {
+      margin-top: 4rem;
+    }
+  }
+  

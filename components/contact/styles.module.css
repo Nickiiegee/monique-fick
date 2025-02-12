@@ -1,0 +1,73 @@
+.contact_container {
+    width: 100%; /* Utilize full container width */
+    display: grid;
+    gap: 2rem; /* Space between contact options and other elements */
+    justify-items: center; /* Center-align content */
+  }
+  
+  .contact_h5 {
+    margin-top: 8rem;
+    text-align: center;
+    color: rgba(187, 199, 253, 0.89);
+  }
+  
+  .contact_h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: rgba(3, 118, 250, 0.925);
+    text-shadow: 1px 1px #000000;
+  }
+  
+  .contact_options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    justify-items: center;
+  }
+  
+  .contact_option {
+    background: rgba(0, 73, 156, 0.925);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all 300ms ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 250px;
+    text-decoration: none; /* Remove underline for links */
+    color: white; /* Use inherited text color */
+  }
+  
+  .contact_option:hover {
+    background: transparent;
+    border-color: rgba(3, 118, 250, 0.925);
+    cursor: pointer;
+  }
+  .socials {
+    background: transparent;
+    color: rgba(187, 199, 253, 0.89);
+  }
+  
+  /* 
+   Devices
+   */
+   @media screen and (max-width: 1024px) {
+    .contact_container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  
+    .contact_options {
+      grid-template-columns: 1fr; /* Stack vertically on smaller screens */
+    } 
+  }
+  
+  @media screen and (max-width: 600px) {
+    .contact_options {
+      grid-template-columns: 1fr; /* Stack vertically on smaller screens */
+    } 
+  }
+  

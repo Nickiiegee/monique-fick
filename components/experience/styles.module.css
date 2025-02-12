@@ -1,0 +1,102 @@
+.experience_h2 {
+    text-align: center;
+    color: rgba(3, 118, 250, 0.925);
+    margin-bottom: 3rem;
+    margin-top: 8rem;
+    text-shadow: 2px 2px #000000;
+  }
+  
+  .experience_toggle {
+    width: 50em;
+    position: relative;
+    border-radius: 1rem;
+    transform: translate(-50%, -50%);
+    color: linear-gradient(135deg, rgba(3, 118, 250, 0.925), rgba(187, 199, 253, 0.89));
+  }
+  
+  .experience_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem; /* Increased gap for more breathing room */
+    margin-top: 8rem;
+  }
+  
+  .experience_container > div {
+    background: rgba(0, 73, 156, 0.925);
+    padding: 2.5rem 3rem;
+    border-radius: 1rem;
+    border: 2px solid rgba(187, 199, 253, 0.89);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 500ms ease;
+  }
+  
+  .experience_container > div:hover {
+    border-color: rgba(187, 199, 253, 0.89);
+    background: transparent;
+    cursor: default;
+    transition: all 500ms ease;
+  }
+  
+  .experience_container > div h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: rgb(226, 239, 253);
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+  
+  .experience_details {
+    display: flex;
+    gap: 1.2rem;
+    padding: 1rem 0; /* Added padding for visual separation */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle line separation */
+    background-color: transparent;
+  }
+  
+  .experience_details_small {
+    margin-left: 2rem;
+    display: list-item;
+    color: white;
+    line-height: 1.2;
+    font-size: 13px;
+  }
+  
+  .experience_details_icon {
+    color: rgba(183, 214, 250, 0.89);
+    margin-right: 12px;
+    /* font-size: 1.5rem; */
+  }
+  
+  .experience_details h4 {
+    color: rgb(226, 239, 253);
+    font-size: 1.1rem;
+    margin-top: 0;
+    font-weight: 600;
+  }
+  
+  /* 
+   Devices
+   */
+   @media screen and (max-width: 1024px) {
+    .experience_container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .experience_container > div {
+      padding: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .experience_container {
+      gap: 1.5rem;
+    }
+    .experience_container > div {
+      padding: 1.5rem;
+    }
+  
+    .experience_details small li {
+      margin-left: 1rem;
+    }
+  }
+  

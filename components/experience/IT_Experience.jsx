@@ -13,7 +13,7 @@ const IT_Experience = () => {
             {dutyList.map(({ role, duties }, idx) => {
               return (
                 <Box className={styles.experience_content} key={idx}>
-                  <Paper className={styles.experience_details} elevation={0}>
+                  <Paper className={styles.experience_details} elevation={0} sx={{ backgroundColor: 'transparent' }}>
                     <Box>
                       <Typography variant="h4">
                         <FaRegCheckCircle

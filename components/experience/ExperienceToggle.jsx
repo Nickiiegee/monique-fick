@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import styles from "./styles.module.css";
 import { Stack, Switch, Typography } from "@mui/material";
 import { useState } from "react";
@@ -10,7 +10,18 @@ const ExperienceToggle = () => {
 
   return (
     <section id="experience">
-      <Typography variant="h2" className={styles.experience_h2}>
+      <Typography
+        variant="h2"
+        className={styles.experience_h2}
+        sx={{
+          marginBottom: "2rem",
+          textAlign: "center",
+          color: " rgba(3, 118, 250, 0.925)",
+          textShadow: "2px 2px #000000",
+          marginTop: '8rem',
+          textShadow: '2px 2px #000000'
+        }}
+      >
         Experience | Qualifications
       </Typography>
       <Stack

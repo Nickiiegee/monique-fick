@@ -15,21 +15,35 @@ const About = () => {
 
   return (
     <section id="about">
-      <Typography variant="h6" 
-      // className={styles.about_h5}
-      sx={{
-        'marginTop': '8rem',
-        'textAlign': 'center',
-        'color':' rgba(187, 199, 253, 0.89)',
-      }}
+      <Typography
+        variant="h6"
+        sx={{
+          marginTop: "8rem",
+          textAlign: "center",
+          color: " rgba(187, 199, 253, 0.89)",
+        }}
       >
         Get to know me a little more
       </Typography>
-      <Typography variant="h2" className={styles.about_h2}>
+      <Typography
+        variant="h2"
+        sx={{
+          marginBottom: "3rem",
+          textAlign: "center",
+          color: " rgba(3, 118, 250, 0.925)",
+          textShadow: "2px 2px #000000",
+        }}
+      >
         About Me
       </Typography>
 
-      <Box className={styles.about_container}>
+      <Box
+        sx={{
+          display: "grid",
+          gridTemplateColumns: "35% 50%",
+          gap: "15%",
+        }}
+      >
         <Box className={styles.about_me}>
           <Box className={styles.about_me_image}>
             <Image
@@ -44,12 +58,17 @@ const About = () => {
           <Box className={styles.about_cards}>
             {aboutList.map(({ category, detail }, idx) => {
               return (
-                <Paper className={styles.about_card} key={idx} sx={{ 
-                  background: 'rgba(0, 73, 156, 0.925)',
-                  '&:hover': {
-                    transition: 'all 300ms ease'
-                  }
-                  }}>
+                <Paper
+                  className={styles.about_card}
+                  key={idx}
+                  sx={{
+                    background: "rgba(0, 73, 156, 0.925)",
+                    borderRadius: '1rem',
+                    "&:hover": {
+                      transition: "all 300ms ease",
+                    },
+                  }}
+                >
                   {category === "Education" ? (
                     <MdSchool className={styles.about_icon} />
                   ) : category === "IT Experience" ? (
@@ -60,7 +79,10 @@ const About = () => {
                     <BiGitBranch className={styles.about_icon} />
                   )}
                   <Typography>{category}</Typography>
-                  <Typography className={styles.about_card_small} sx={{ fontSize: '12px'}}>
+                  <Typography
+                    className={styles.about_card_small}
+                    sx={{ fontSize: "12px" }}
+                  >
                     {detail}
                   </Typography>
                 </Paper>

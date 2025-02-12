@@ -7,10 +7,27 @@ import { RiWhatsappLine } from "react-icons/ri";
 const Contact = () => {
   return (
     <section id="contact">
-      <Typography variant="h6" className={styles.contact_h5}>
+      <Typography
+        variant="h6"
+        className={styles.contact_h5}
+        sx={{
+          marginTop: "8rem",
+          textAlign: "center",
+          color: " rgba(187, 199, 253, 0.89)",
+        }}
+      >
         Want To Talk?
       </Typography>
-      <Typography variant="h2" className={styles.contact_h2}>
+      <Typography
+        variant="h2"
+        className={styles.contact_h2}
+        sx={{
+          marginBottom: "3rem",
+          textAlign: "center",
+          color: " rgba(3, 118, 250, 0.925)",
+          textShadow: "2px 2px #000000",
+        }}
+      >
         Contact Me
       </Typography>
       <Box className={styles.contact_container}>

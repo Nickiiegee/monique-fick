@@ -7,15 +7,13 @@ export const ITExperienceList = [
         role: "Consultant Software Engineer - Autumn Leaf IT (Sept 2022 - Present)",
         duties: [
           "Demonstrates experience through confidence in meetings, implementation and communications.",
-          "Directly bilng and showing value to the customer.",
-          "Able to lead engagements, and drive the narrative or lead the solution design on projects.",
-          "Deepening of skills and improving critical thinking.",
-          "Used React to build dashboard for well-known financial organization in South Africa to display all financial transactions and list any errors or discrepancies found in the data. Used Redux for state management.",
+          "Ablility to lead engagements, and drive the narrative or lead the solution design on projects.",
+          "Used React to build dashboard for well-known financial organization in South Africa to display all financial transactions and list any errors or discrepancies found in the data.",
           "Built a job card system for an electrical company that will be released as a product that is open to the public soon to keep track of jobs done. This system lists all customers, job cards, suppliers and inventory items with integration to both PayFast for subscribing to the app and Quickbooks to create invoices.",
           "Hosted static site on AWS S3 for above-mentioned product (beta release in 2024).",
           "Built CI/CD pipelines using AWS services i.e CodePipeline, CodeBuild and Cloudformation for cross account deployments and the creation of resources across all accounts. Also wrote templates using AWS SAM to deploy Lambda scripts and AppSync schemas.",
-          "Exposed endpoints using AWS API Gateway and AppSync to connect to AWS services to process data sent from the frontend. Services used includes Lambda, RDS, DynamoDB and Cognito to name a few.",
-          "Used JWT tokens together with AWS Cognito for authenticating a user to access the application and to AWS resources.",
+          "Exposed endpoints using AWS API Gateway and AppSync to connect to AWS services to process data sent from the frontend. Services used include Lambda, RDS, DynamoDB and Cognito to name a few.",
+          "Used JWT tokens together with AWS Cognito for authenticating a user to access the application and AWS resources.",
           "Mentored and motivated development team in getting tasks done in time and upskilling them.",
           "Team lead: leading a team of 6 members (the largest pod in the development team). Conducting monthly 1:1's, overseeing their projects and overall well-being, managing leave days and give appropriate feedback to HOD.",
           "Perform code reviews to ensure all code is aligned with company standards.",
@@ -46,6 +44,7 @@ export const ITExperienceList = [
           "NodeJS",
           "React Native (exposure)",
           "SQL | NoSQL",
+          "GraphQL"
         ],
       },
       {

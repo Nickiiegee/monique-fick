@@ -1,8 +1,9 @@
 import COUNTRIES from "@/src/assets/projects/countries.png";
-import ITUNES from "@/src/assets/projects/itunes.png";
+import SHOPPING from "@/src/assets/projects/shopping.png";
 import RESUME from "@/src/assets/projects/resume.png";
 import RZEN from "@/src/assets/projects/rzen.png";
-import TETRIS from "@/src/assets/projects/tetris.png";
+import SUPPLIES from "@/src/assets/projects/supply.png";
+import EXPENSES from "@/src/assets/projects/expenses.png";
 
 export const ProjectList = [
   {
@@ -32,20 +33,28 @@ export const ProjectList = [
   },
   {
     id: 4,
-    title: "Tetris Game - 2020",
-    description:
-      "A simple Tetris game built with JavaScript and HTML/CSS. This was my first programming project when I just started out.",
+    title: "Mock Daily Expenses - 2025",
+    description: "A simple app that helps to keep track of daily expenses supporting actions like exporting to CSV and clearing the list.",
     // image: "tetris-game.png",
-    image: TETRIS,
-    link: "https://github.com/Nickiiegee/React-TetrisGame",
+    image: EXPENSES,
+    link: "https://mock-daily-expense-tracker.vercel.app/",
   },
   {
     id: 5,
-    title: "iTunes Search - 2020",
+    title: "Mock Supply Dashboard - 2025",
     description:
-      "My first simple search engine for searching songs on iTunes. You are able to add or remove songs to your favourites list.",
+      "A sample app created to experiment Tailwind CSS. This dashboard is dynamically built to allow the user to keep track of stock for many containers across multiple categories.",
     // image: "weather-app.png",
-    image: ITUNES,
-    link: "https://github.com/Nickiiegee/react-iTunes-search",
+    image: SUPPLIES,
+    link: "https://mock-supply-dashboard.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "Smart Shopping List - 2025",
+    description:
+      "This app was created to display simple, yet effective track record of shopping supplies, giving suggestions on recently bought items as well as displaying a list of items recently bought.",
+    // image: "weather-app.png",
+    image: SHOPPING,
+    link: "https://smart-shopping-list-seven.vercel.app/",
   },
 ];

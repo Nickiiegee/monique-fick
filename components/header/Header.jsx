@@ -5,6 +5,7 @@ import Image from "next/image";
 import { ReactTyped } from "react-typed";
 import CTA from "./CTA";
 import HeaderSocials from "./HeaderSocials";
+import MONIQUE from "@/src/assets/MoniquePhoto.jpg"
 
 const Header = () => {
   return (
@@ -27,6 +28,7 @@ const Header = () => {
             "Coffee Addict",
             "Professional Stack Overflow Researcher",
             "Code Monkey",
+            "Aspiring Prompt Engineer",
           ]}
           typeSpeed={100}
           backSpeed={50}
@@ -35,7 +37,7 @@ const Header = () => {
         <CTA />
         <HeaderSocials />
         <div className={styles.me}>
-          <Image src={ME} alt="me" />
+          <Image src={MONIQUE} alt="me" />
         </div>
       </Box>
     </Box>

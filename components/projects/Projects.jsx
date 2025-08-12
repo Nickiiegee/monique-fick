@@ -73,8 +73,12 @@ const Projects = () => {
                 {description}
               </Typography>
               <Box className={styles.project_item_info}>
-                <Link href={link} className={styles.project_item_info_link}>
-                  Visit Project
+                <Link
+                  target="_blank"
+                  href={link}
+                  className={styles.project_item_info_link}
+                >
+                  View Project
                 </Link>
               </Box>
             </Paper>

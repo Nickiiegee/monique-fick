@@ -27,11 +27,11 @@ const IT_Experience = () => {
                       </Typography>
                       {duties ? (
                         <List sx={{ listStyleType: "disc" }}>
-                          {duties.map((duty, idx) => {
+                          {duties.map((duty, index) => {
                             return (
                               <ListItem
                                 className={styles.experience_details_small}
-                                key={idx}
+                                key={index}
                                 sx={{ listStyleType: "disc", display: 'list-item' }}
                               >
                                 {duty}

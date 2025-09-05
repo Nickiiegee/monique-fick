@@ -15,7 +15,7 @@ export const testimonialObjects = [
     avatar: "andre@al.co.za",
     name: "André Smink | Autumn Leaf IT",
     review:
-      "It's always smooth sailing when Monique is on the team. Her expertise, combined with her positive attitude, makes her an invaluable asset to any team.",
+      "It is my pleasure to highly recommend Monique, who consistently impressed our team with her exceptional adaptability and eagerness to take on new challenges. Her skills were on full display when she led the development of a complex orchestration layer for a customer's AI-powered document processing system. Monique is a truly collaborative engineer who would be a tremendous asset to any development team.",
   },
   {
     avatar: "michelle@body20.co.za",
